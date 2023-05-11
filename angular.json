@@ -92,13 +92,19 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": []
+            "styles": [ "node_modules/bootstrap/dist/css/bootstrap.css", 
+            "src/styles.css" ], 
+            "scripts": [ "node_modules/jquery/dist/jquery.js", 
+            "node_modules/popper.js/dist/umd/popper.js", 
+            "node_modules/bootstrap/dist/js/bootstrap.js"]
+        
+            
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e20e64f9-2a72-4200-81b7-6e3d78436979"
   }
 }

@@ -1,0 +1,25 @@
+<h1>Todos os Pedidos</h1>
+
+<table class="table table-success table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Código</th>
+      <th scope="col">CPF</th>
+      <th scope="col">NOME DO CLIENTE</th>
+      <th scope="col">PRODUTO</th>
+      <th scope="col">QUANTIDADE</th>
+      <th scope="col">STATUS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pedido of Pedidos">
+      <td>{{pedido.cod}}</td>
+      <td>{{pedido.cpf}}</td>
+      <td>{{pedido.nomeCliente}}</td>
+      <td>{{pedido.produto}}</td>
+      <td>{{pedido.quantidade}}</td>
+      <td>{{pedido.status}}</td>
+      <button type="button" class="btn btn-success" (click)="confirmarEntrega(pedido.cod)">Confirmar Entrega</button>
+    </tr>
+  </tbody>
+</table>
